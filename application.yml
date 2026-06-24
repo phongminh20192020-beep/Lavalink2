@@ -68,9 +68,10 @@ lavalink:
       channelMix: true
       lowPass: true
     bufferDurationMs: 400
-    frameBufferDurationMs: 5000
+    frameBufferDurationMs: 2000  # reduced from 5000 to save RAM
     opusEncodingQuality: 10
     resamplingQuality: LOW
+    nonAllocatingFrameBuffer: true  # reduces allocations, saves RAM
     trackStuckThresholdMs: 10000
     useSeekGhosting: true
     youtubePlaylistLoadLimit: 6
